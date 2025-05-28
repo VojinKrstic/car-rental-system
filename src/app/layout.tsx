@@ -2,6 +2,7 @@
 
 import { ThemeProvider } from "styled-components";
 import theme from "../theme/theme";
+import GlobalStyle from "./globalStyle";
 
 export default function RootLayout({
   children,
@@ -11,7 +12,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ThemeProvider theme={theme}>{children}</ThemeProvider>
+        <ThemeProvider theme={theme}>
+          <GlobalStyle />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,3 +1,5 @@
+"use client";
+
 import HomePage from "../../containers/HomePage/HomePage";
 
 const Home = () => {
