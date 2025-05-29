@@ -33,7 +33,7 @@ const Menu = () => {
   };
 
   return (
-    <MenuStyled showMenu={showMenu}>
+    <MenuStyled $showMenu={showMenu}>
       {!isDesktop && (
         <Fragment>
           <Image

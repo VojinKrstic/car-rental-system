@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { RIGHT_ARROW } from "@/assets/images";
 
 interface MenuProps {
-  showMenu: boolean;
+  $showMenu: boolean;
 }
 
 export const MenuStyled = styled.div<MenuProps>`
@@ -11,7 +11,7 @@ export const MenuStyled = styled.div<MenuProps>`
     transition: all 0.3s ease;
   }
   .menu-items {
-    display: ${(props) => (props.showMenu ? "flex" : "none")};
+    display: ${(props) => (props.$showMenu ? "flex" : "none")};
     position: absolute;
     z-index: 9999;
     left: 0;
